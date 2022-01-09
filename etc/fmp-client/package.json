@@ -1,6 +1,6 @@
 {
   "name": "@gainer/fmp-client",
-  "version": "0.0.8",
+  "version": "0.0.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
