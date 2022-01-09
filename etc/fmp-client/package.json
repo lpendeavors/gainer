@@ -1,0 +1,20 @@
+{
+  "name": "@gainer/fmp-client",
+  "version": "0.0.8",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0"
+  },
+  "dependencies": {
+    "typescript": "^4.5.4"
+  }
+}
