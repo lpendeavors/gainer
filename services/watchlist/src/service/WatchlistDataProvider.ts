@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import bluebird from "bluebird";
-import { IWatchlist } from "@gainer/models";
+import { IWatchlist } from "@leadofftech/gainer-models";
 import Watchlist, { WatchlistDocument } from "./WatchlistSchema";
 
 mongoose.Promise = bluebird.Promise;

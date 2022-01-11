@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { IWatchlist } from '@gainer/models';
+import { IWatchlist } from '@leadofftech/gainer-models';
 
 export type WatchlistDocument = mongoose.Document & IWatchlist;
 
@@ -10,7 +10,6 @@ const WatchlistSchema = new mongoose.Schema<WatchlistDocument>({
   },
   name: {
     type: String,
-    required: true,
   },
   url: {
     type: String,

@@ -1,5 +1,5 @@
 {
-  "name": "@gainer/watchlist-service",
+  "name": "@leadofftech/gainer-watchlist-service",
   "version": "0.0.1-alpha.0",
   "description": "",
   "main": "index.js",
@@ -19,7 +19,7 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "@gainer/models": "^0.0.5",
+    "@leadofftech/gainer-models": "^0.0.1-alpha.0",
     "bluebird": "^3.7.2",
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",

@@ -1,5 +1,5 @@
 {
-  "name": "@gainer/stock-service",
+  "name": "@leadofftech/gainer-stock-service",
   "version": "0.0.1-alpha.0",
   "description": "",
   "main": "index.js",
@@ -14,14 +14,15 @@
     "@types/cors": "^2.8.12",
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.13",
+    "dotenv": "^10.0.0",
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "@gainer/fmp-client": "^0.0.8",
-    "@gainer/models": "^0.0.5",
+    "@leadofftech/fmp-client": "^0.0.2-alpha.0",
+    "@leadofftech/gainer-models": "^0.0.4",
+    "axios": "^0.24.0",
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
     "express": "^4.17.2"
   }
 }

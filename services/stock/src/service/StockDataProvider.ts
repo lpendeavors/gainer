@@ -1,5 +1,4 @@
-import fmp from "@gainer/fmp-client";
-import { StockNewsResult, StockQuoteResult, StockHistoricalPriceResult } from "@gainer/fmp-client/dist/lib/models";
+import fmp, { StockNewsResult, StockQuoteResult, StockHistoricalPriceResult, CompanyRatingResult } from "@leadofftech/fmp-client";
 
 export const getSymbols =  async (symbols: string): Promise<StockQuoteResult[]> => {
   return await fmp.stock(symbols).quote();
@@ -11,11 +10,13 @@ export const getNews = async (symbols: string): Promise<StockNewsResult[]> => {
 
 export const getHistory = async (symbol: string, start_date?: string, end_date?: string, data_type?: 'line' | 'bar', limit?: number): Promise<StockHistoricalPriceResult> => {
   let params = {};
-  
-  if (start_date) params = { ...params, start_date };
-  if (end_date) params = { ...params, end_date };
-  if (data_type) params = { ...params, data_type };
-  if (limit) params = { ...params, limit };
+  if (start_date !== undefined) params = { ...params, start_date };
+  if (end_date !== undefined) params = { ...params, end_date };
+  if (data_type !== undefined) params = { ...params, data_type };
+  if (limit !== undefined) params = { ...params, limit }; 
+  return await fmp.stock(symbol).history(params);
+}
 
-  return await fmp.stock(symbol).history({ data_type, limit });
+export const getRating = async (symbol: string): Promise<CompanyRatingResult[]> => {
+  return await fmp.stock(symbol).rating();
 }

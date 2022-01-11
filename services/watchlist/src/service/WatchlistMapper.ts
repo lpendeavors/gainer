@@ -1,4 +1,4 @@
-import { IWatchlist } from '@gainer/models';
+import { IWatchlist } from '@leadofftech/gainer-models';
 import { WatchlistDocument } from './WatchlistSchema';
 
 export const toIWatchlist = (doc: WatchlistDocument | null) => {
